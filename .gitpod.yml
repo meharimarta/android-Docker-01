@@ -1,15 +1,11 @@
-image:
+image: phlummox/android-studio:latest
   file: .gitpod.Dockerfile
 
-tasks:
-  - init: ./gradlew assemble
-  - command: ./gradlew build
-
 ports:
-  - port: 3000
-    onOpen: open-preview
+  - port: 6080
+    protocol: "http"
 
-vscode:
-  extensions:
-    - vscjava.vscode-java-pack
-    - ms-kotlin.kotlin
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: echo 'init script' # runs during prebuild
+    command: echo 'start script'
