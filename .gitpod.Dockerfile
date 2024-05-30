@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc:2022-07-20-05-50-58
+FROM gitpod/workspace-full-vnc
 SHELL ["/bin/bash", "-c"]
 ENV ANDROID_HOME=$HOME/Android/Sdk 
 ENV PATH="$HOME/Android/Sdk/emulator:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/cmdline-tools/latest/bin:$HOME/Android/Sdk/platform-tools:$PATH"
